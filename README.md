@@ -1,5 +1,7 @@
 Picture-organizer
 =================
+Issue: Error will occur if a file inside the organized folders is deleted and the organizer is ran again.
+
 
 Organizes all non-python, non-directory files in the current directory based on name. Ignores/removes any % signs at the end of the file's name, in order to allow semi-duplicate names so that files go to the same folder if needed.
 
@@ -11,3 +13,6 @@ It creates new folders "Akito Folder", and "Garbage Folder".
 It will take every file with "Akito.extension" as the name, and all files with "Akito%.extension" as the name with any number of % symbols, and then place them in the "Akito Folder".
 
 "Garbage.jpg", due to having a different name, is placed in the "Garbage Folder" that was made for it.
+
+
+When put inside the folder, they're numbered to prevent duplicate names.
