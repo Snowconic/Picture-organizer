@@ -11,7 +11,6 @@ def moveFile(source, destination):
     filename = source
     if not os.path.isdir(destination):
         os.mkdir(destination)
-   # if os.path.isfile(destination+"/"+filename.split('%')[0]+filename.split('%')[1]):
     filename = renameFile(filename, destination)
     shutil.move(filename, destination)
 
